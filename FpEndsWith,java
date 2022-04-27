@@ -1,0 +1,10 @@
+import java.util.List;
+
+public class FpEndsWith {
+    public static void main(String[] args) 
+    {
+        List<String> list = List.of("apple","bat","cat","dog");
+        list.stream().filter(e -> e.endsWith("at"))
+                      .forEach(e-> System.out.println(e));
+    }
+}
